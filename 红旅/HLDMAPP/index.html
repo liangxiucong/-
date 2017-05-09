@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- 先引入第三方的框架 再引入自己的 -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="css/base.less">
+    <link rel="stylesheet/less" href="css/index.less">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- 编译less文件 -->
+    <script src="lib/less/less.js"></script>
+
+
+</head>
+
+<body>
+<!--主页的容器-->
+<div class="layout">
+    <div class="mask"></div>
+    <!--头部区域-->
+    <header id="header">
+        <i class="icon-menu"></i>
+        <h4>红旅动漫</h4>
+        <i class="icon-search"></i>
+    </header>
+
+    <!--轮播图-->
+    <div id="slide">
+        <!--用了框架的代码，轮播图容器-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- 小圆点 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            </ol>
+
+            <!-- 轮播项 -->
+            <div class="carousel-inner" role="listbox">
+                <!--每一个item就是一张轮播图-->
+                <div class="item active">
+                    <img src="images/l1.jpg" alt="...">
+                    <!--轮播图的标题-->
+                    <div class="carousel-caption">
+                        每个月都来给红旅打赏下吧
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/l2.jpg" alt="...">
+
+                    <div class="carousel-caption">
+                        红旅动漫资源分享群开放啦
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/l3.jpg" alt="...">
+
+                    <div class="carousel-caption">
+                        红旅动漫资源分享群开放啦
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/l4.jpg" alt="...">
+
+                    <div class="carousel-caption">
+                        每个月都来给红旅打赏下吧
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/l5.jpg" alt="...">
+
+                    <div class="carousel-caption">
+                        红旅动漫资源分享群开放啦
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--主页的动漫tab栏-->
+    <div id="cartoon">
+        <!--一样用了框架代码-->
+        <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                          data-toggle="tab">新增连载</a></li>
+
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">新增完结</a>
+                </li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                                           data-toggle="tab">推荐连载</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab"
+                                           data-toggle="tab">推荐完结</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <ul>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <ul>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <ul>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    <ul>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                        <li class="col-xs-6">
+                            <a href="#">
+                                <img src="images/cp1.jpg" alt=""/>
+
+                                <p>连载至12集</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--左侧的导航菜单-->
+<div class="left-menu">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="#">
+                <img src="images/logo.png" style="width: 100%"/>
+            </a>
+        </li>
+        <li class="list-group-item"><a href="serial.html">连载动漫</a></li>
+        <li class="list-group-item"><a href="features.html">专题列表</a></li>
+        <li class="list-group-item"><a href="#">关于</a></li>
+    </ul>
+</div>
+</body>
+</html>
+
+
+
+<!--这是轮播图的每一张图片的模板-->
+<script type="text/html" id="slideTmp">
+    <% for(var i=0;i<list.length;i++){%>
+    <div class="item">
+        <img src="<%=list[i].img%>" alt="...">
+        <div class="carousel-caption">
+            <% =list[i].title %>
+        </div>
+    </div>
+    <%}%>
+</script>
+
+<script type="text/html" id="cartoonListTmp">
+    <% for(var i=0; i<list.length; i++) {%>
+    <li class="col-xs-6">
+        <a href="#">
+            <img src="<%=list[i].img %>" alt=""/>
+
+            <p><%=list[i].name %></p>
+        </a>
+    </li>
+    <%}%>
+</script>
+
+<!--引入bootstrap的js的时候依赖jquery所以先引入jquery-->
+<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+<!-- 原生语法的包 -->
+<script src="js/template-native.js"></script>
+<script src="js/index.js"></script>
+

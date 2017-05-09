@@ -1,0 +1,114 @@
+.layout{
+  transform: translateX(0px);
+  .mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: none;
+
+  }
+  
+  //头部区域
+  #header {
+    background-color: #f5f5f5;
+    > h4 {
+      width: 100%;
+      text-align: center;
+      line-height: 40px;
+      margin: 0;
+    }
+    >.icon-menu{
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 20px;
+    }
+    .icon-search{
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 20px;
+    }
+  }
+
+  //轮播图
+  #slide{
+    //小圆点
+    .carousel-indicators{
+      left: 100%;
+      margin-left: -42%;
+      bottom: -5px;
+    }
+    //banner说明标题
+    .carousel-caption{
+      width: 100%;
+      bottom: 0px;
+      padding: 10px 0;
+      padding-left: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      left: 0;
+      text-align: left;
+    }
+  }
+
+  //tab栏主体部分
+  #cartoon{
+    .nav-tabs{
+      li{
+        width: 25%;
+        //border-right: 1px solid black;
+        a{
+          border-radius: 0;
+          border:0;
+          text-align: center;
+        }
+      }
+      li.active{
+        border-bottom: 2px solid red;
+      }
+    }
+    .tab-content{
+      .tab-pane{
+        li{
+          a{
+            display: block;
+            position: relative;
+            img{
+              width: 100%;
+            }
+          }
+          p{
+            position: absolute;
+            height: 40px;
+            line-height: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 100%;
+            bottom: 0;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+  //左侧菜单部分
+.left-menu {
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-200px);
+    transition:all 0.5s ;
+}
+
+
+
